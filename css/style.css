@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;800&display=swap');
+
+html {
+  font-size: 10px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  overflow-x: hidden;
+  background-color: #f4f4f4;
+}
+
+:root {
+  /* Colors */
+  --dark: #13183F;
+  --dark-alt: #666ca3;
+  --grey: #83869a;
+  --primary: #f74780;
+  --primary-light: #ffa7c3;
+  --white: #ffffff;
+  --primary_gradient: linear-gradient(hsl(13,100%,64%),hsl(322, 87%, 55%));
+  --secondary_gradient: linear-gradient(hsl(237,100%,64%), hsl(322, 87%, 55%));
+
+  /* Headings */
+  --heading_xl: 5.6rem;
+  --heading_l: 4rem;
+  --headling_m: 2.4rem;
+  --heading_s: 2.0rem;
+
+  /* Body Font Sizes */
+  --body_m: 1.8rem;
+  --body_s: 1.4rem;  
+}
+
+/* Headings */
+.xl_heading {
+  font-size: var(--heading_xl);
+  line-height: 7rem;
+}
+
+.l_heading {
+  font-size: var(--heading_l);
+  line-height: 5.1rem;
+}
+
+.m_heading {
+  font-size: var(--headling_m);
+  line-height: 2.8rem;
+}
+
+.s_heading {
+  font-size: var(--heading_s);
+  line-height: 2.4rem;
+}
+
+/* Paragraphs */
+.m_paragraph {
+  font-size: var(--body_m);
+  line-height: 2.8rem;
+  font-weight: 300;
+}
+
+.s_paragraph {
+  font-size: var(--body_s);
+  line-height: 1.8rem;
+  font-weight: 300;
+}
+
+/* Buttons */
+.btn{
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.6rem;
+  background: var(--dark);
+  padding: 1.6rem 2.4rem;
+  color: var(--white);
+  border-radius: 100px;
+  z-index: 1;
+}
+
+.btn-primary:hover {
+  background: var(--dark-alt);
+}
+
+.btn-gradient-primary {
+  background: var(--primary_gradient)
+}
+
+.btn-gradient-primary:hover {
+  background: linear-gradient(hsl(13,100%,79%),hsl(322, 87%, 70%))
+}
+
+.btn-gradient-secondary {
+  background: var(--secondary_gradient);
+}
+
+.btn-gradient-secondary:hover {
+  background: linear-gradient(hsl(237,100%,79%), hsl(322, 87%, 70%));
+}
+
+/* Container */
+.container {
+  max-width: 80vw;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.main {
+  display: flex;
+  height: 80vh;
+}
+
+.main_left {
+  width: 50%;
+  margin-right: 10px;
+  padding-top: 75px;
+}
+
+.main_right {
+  width: 50%;
+  margin: 10px;
+  padding: 0 50px;
+}
+
+.main .title{
+  margin-bottom: 30px;
+}
+
+.main .main_paragraph {
+  padding-right: 20px;
+  margin: 20px 0;
+  margin-bottom: 50px;
+}
+
+.main .hero_image {
+  position: absolute;
+  top: -100px;
+  right: -275px;
+  width: 90%;
+  max-width: 900px;
+  height: auto;
+}
+
+/* Courses */
+.courses .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.courses .row .card {
+  width: 30%;
+  margin: 35px 0px;
+  padding: 20px;
+  background: var(--white);
+  border-radius: 10px;
+  height: 280px;
+}
+
+.courses .row .title_card {
+  background: var(--primary_gradient);
+  color: var(--white);
+  padding: 50px 50px 10px 25px;
+}
+
+.courses .row .course_card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.courses .row .course_card .icons {
+  width: 40px;
+  position: absolute;
+  top: -20px;
+  left: 15px;
+}
+
+.courses .row .course_card .card_link {
+  text-decoration: none;
+  font-size: var(--body_s);
+  color: var(--primary);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--dark);
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 75px;
+}
+
+
+
